@@ -1,6 +1,6 @@
-# Vesper UI · 2.0.0
+# Vesper UI · 3.0.0
 
-A shared brand and UI system for **Vesper**, the fictional parent of Watchlight, Frame, and Verbatim. Created September 30, 2026 from inspection of all three local projects. Version 2 is the Vesper naming and visual update for the already-adopted Meridian package; each application must upgrade in its own repository.
+A shared brand and UI system for **Vesper**, the fictional parent of Watchlight, Frame, and Verbatim. Version 3 adopts a cool salt-flat canvas, petrol accents, and condensed sans display type. Each application installs its own portable copy of the package.
 
 Start with the [visual reference](preview/index.html), [brand identity](docs/BRAND.md), [project inventory](docs/INVENTORY.md), [review readiness](docs/REVIEW-READINESS.md), and [component contracts](docs/COMPONENTS.md). The source of truth for values is `src/tokens.json`; build outputs must not be edited by hand.
 
@@ -8,7 +8,7 @@ Start with the [visual reference](preview/index.html), [brand identity](docs/BRA
 
 - One parent identity using an original V-and-star Vesper mark, with a common Vue brand lockup.
 - Paper, light and dark semantic themes; operations, editorial and mobile layout modes.
-- Locally hosted DM Sans 400/500/600/700 and Libre Caslon Display 400, with font licenses.
+- Locally hosted DM Sans 400/500/600/700 and Barlow Condensed 600/700, with font licenses.
 - Generated CSS variables, typed JavaScript tokens, framework-neutral CSS recipes and seven Vue 3 primitives.
 - Vuetify, Ionic and ECharts/D3 styling adapters; existing frameworks remain in place.
 - A responsive reference site with a theme switch, live control states, form validation and evidence dialog.
@@ -36,11 +36,11 @@ Run these commands **from that project's root** after following its prompt. This
 
 ```sh
 mkdir -p vendor
-cp ../vesper-design-system/releases/vesper-ui-2.0.0.tgz vendor/
-npm install ./vendor/vesper-ui-2.0.0.tgz
+cp ../vesper-design-system/releases/vesper-ui-3.0.0.tgz vendor/
+npm install ./vendor/vesper-ui-3.0.0.tgz
 ```
 
-Retain `vendor/vesper-ui-2.0.0.tgz`, package.json and the updated lockfile together. Do not use `file:../vesper-design-system`, a development symlink, an unpublished registry dependency, or cross-project application imports. If this project is moved elsewhere, copy the tarball and docs into the checkout before continuing.
+Retain `vendor/vesper-ui-3.0.0.tgz`, package.json and the updated lockfile together. Do not use `file:../vesper-design-system`, a development symlink, an unpublished registry dependency, or cross-project application imports. If this project is moved elsewhere, copy the tarball and docs into the checkout before continuing.
 
 ```ts
 // Import after framework core styles, before local application styles.

@@ -13,8 +13,8 @@ Vesper is an invented media group spanning streaming, publishing, podcasts and l
 | Product | Job | Theme / mode | Expression |
 | --- | --- | --- | --- |
 | Watchlight | Triage reporting and coordinate a response | dark / operations | Sans-serif headings, tabular metrics, a dominant queue, compact supporting evidence |
-| Frame | Explain what campaign counts do and do not show | paper / editorial | Caslon display headlines, open spacing, ruled figures, direct data labels |
-| Verbatim | Find, verify and copy approved wording | light / mobile | A reassuring reading surface, generous controls, clear eligibility and a reachable copy action |
+| Frame | Explain what campaign counts do and do not show | paper / editorial | Condensed sans display headlines and a pale salt-flat texture, open spacing, ruled figures, direct data labels |
+| Verbatim | Find, verify and copy approved wording | light / mobile | A salt-flat canvas, generous controls, clear eligibility and a reachable copy action |
 
 Shared does not mean identical layouts. Parent mark, font families, semantic colors, control shapes, spacing rhythm, focus, status language and evidence conventions establish kinship. Product context determines density and composition. Do not turn the story into a dashboard or the phone library into a desktop table.
 
@@ -24,25 +24,25 @@ Shared does not mean identical layouts. Parent mark, font families, semantic col
 
 ## Color
 
-The palette interprets the sun-faded desert and midcentury geometry of *Asteroid City* as an original UI language. It uses dusty sand and cream for reading surfaces, pale turquoise and petrol for orientation and action, and restrained coral and ochre for accent. It does not reproduce film frames, graphics, or typography. Use semantic tokens instead of raw pigment names in product UI.
+The palette uses pale cool gray surfaces, deep charcoal text and petrol for orientation and action. A subtle salt-flat image adds place and texture to editorial and mobile canvases. Keep dense controls and data surfaces plain for legibility. Use semantic tokens instead of raw pigment names in product UI.
 
 | Family | Core value | Role |
 | --- | --- | --- |
 | Petrol | #20535b | Parent identity and light-theme action |
 | Sky | #b9dee1 | Dark-theme action and cool accent |
-| Sand | #f4e7cf | Editorial canvas and dark-theme text |
-| Cream | #faf0df | Mobile reading canvas |
+| Salt | #e9ece9 | Editorial canvas |
+| Fog | #f0f2ef | Mobile reading canvas |
 | Ink | #292f32 | Light-theme text |
 | Night | #172932 | Operations canvas |
 | Coral | #a44736 | Warm accent, categorical chart series, and semantic danger only through distinct role tokens |
 | Ochre | #76501e | Warning and secondary warmth |
 | Plum | #765276 | Third categorical chart series |
 
-The brand mark uses petrol, sand and coral. In charts, color identifies a series rather than judging its performance; pair it with labels and values. Status requires visible text and contrast, never color alone. Paper, light and dark themes all meet the package's tested text and control contrast pairs.
+The brand mark uses petrol and restrained warm accents. In charts, color identifies a series rather than judging its performance; pair it with labels and values. Status requires visible text and contrast, never color alone. Paper, light and dark themes all meet the package's tested text and control contrast pairs.
 
 ## Typography
 
-DM Sans is the shared UI voice, using 400 for prose, 500/600 for controls and titles, and 700 for emphasis. Libre Caslon Display 400 is the editorial display voice; reserve it for large headlines, editorial figures and short introductory moments. Long exact statements use Georgia for sustained readability. Never transform text before copying it.
+DM Sans is the shared UI voice, using 400 for prose, 500/600 for controls and titles, and 700 for emphasis. Barlow Condensed 600/700 is the display voice for large editorial headings and short product moments. Long exact statements use Georgia for sustained readability. Never transform text before copying it.
 
 Body text: 16px / 1.65. Secondary UI: 14px. Metadata: 12px minimum. Inputs: 16px, particularly on mobile. Reading measure: about 65 characters. Tabular numerals align operational metrics. Avoid restoring the existing 8–10px mobile/eyebrow text during migration.
 
@@ -52,7 +52,7 @@ Use sentence case except short section labels and the company lockup. In a group
 
 Use a 4px spacing rhythm, nearly square 2px small controls, 6px standard controls and 10px large surfaces. Prefer hairline rules and measured panel edges reminiscent of midcentury print design. Editorial charts may remain open or separated by thin rules. Avoid rounding every section into a card. Small charts use 4px bar corners. Elevation is reserved for overlays, not every surface.
 
-The current products need no film stills, stock photos or generated illustrations. Charts, exact wording and article evidence are the content. Use existing MDI icons in Vuetify and Ionicons in Ionic; native editorial controls may use text. Align action icons at 20px and pair them with labels. Do not use Unicode symbols as substitute UI icons. A non-color label or outline carries each status/selection.
+The only generated image is the low-contrast salt-flat surface. Charts, exact wording and article evidence are the content. Use existing MDI icons in Vuetify and Ionicons in Ionic; native editorial controls may use text. Align action icons at 20px and pair them with labels. Do not use Unicode symbols as substitute UI icons. A non-color label or outline carries each status/selection.
 
 Motion is feedback: 120ms hover, 180ms reveal. No spring choreography, parallax or count-up metrics. Reduced motion removes transitions without hiding content or changing data. The fixed demonstration clock remains visible where appropriate.
 

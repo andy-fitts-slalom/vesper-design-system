@@ -1,3 +1,16 @@
+# Vesper UI verification
+
+## 3.0.0 — 2026-10-01
+
+- `npm run check`: five token, contrast, export and Ionic checks passed.
+- `npm_config_cache=/private/tmp/vesper-npm-cache npm run pack:release`: produced `releases/vesper-ui-3.0.0.tgz` (176.1 kB, 31 files), SHA-256 `2f3898d1d9214f9aeeb7cbe16ae7b285ab8e0b9e5c658849aadd5d51db4ecd38`.
+- `node scripts/check-consumer.mjs ../p301-dashboard/node_modules`: Vue type check, client build, SSR build and semantic render passed from the packed release.
+- Chrome preview at `http://127.0.0.1:4386/preview/index.html`: inspected the salt-flat canvas, Barlow Condensed hierarchy, three product specimens and paper palette.
+- The three independent consumers installed the checked-in tarball and built successfully; application test details are recorded in their own verification documents.
+- The background WebP is 35.9 kB at 2048 × 1152, with its generated source PNG retained under `design/`. Existing historical verification remains below.
+
+## Historical 2.0 record
+
 # Vesper 2.0 verification — September 30, 2026
 
 ## Shared package

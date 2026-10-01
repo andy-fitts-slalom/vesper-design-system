@@ -30,7 +30,8 @@
     "./vuetify": "./src/adapters/vuetify.ts",
     "./charts": "./src/adapters/charts.ts",
     "./ionic.css": "./dist/ionic.css",
-    "./brand/*": "./assets/brand/*"
+    "./brand/*": "./assets/brand/*",
+    "./textures/*": "./assets/*"
   },
   "peerDependencies": {
     "vue": "^3.5.0"

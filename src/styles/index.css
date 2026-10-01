@@ -11,7 +11,7 @@
 .vs-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr)); gap:var(--vs-space-4); }
 .vs-surface { background:var(--vs-surface); border:var(--vs-border-width) solid var(--vs-border); border-radius:var(--vs-radius-lg); padding:var(--vs-panel-padding); }
 .vs-eyebrow { font:var(--vs-weight-bold) var(--vs-text-xs)/var(--vs-leading-ui) var(--vs-font-ui); letter-spacing:var(--vs-tracking-label); text-transform:uppercase; }
-.vs-display { font:400 var(--vs-text-display)/var(--vs-leading-display) var(--vs-font-display); letter-spacing:-0.025em; }
+.vs-display { font:700 var(--vs-text-display)/var(--vs-leading-display) var(--vs-font-display); letter-spacing:-0.035em; }
 .vs-title { font:600 var(--vs-text-title)/1.15 var(--vs-font-ui); letter-spacing:-0.035em; }
 .vs-muted { color:var(--vs-text-muted); }
 .vs-prose { max-width:var(--vs-measure); line-height:var(--vs-leading-body); }

@@ -2,7 +2,7 @@
 
 ## A portable shared package
 
-The three applications are independent Git repositories and Vercel projects. Install the checked-in release tarball locally, then keep it in each repository's `vendor/` directory. npm records `file:vendor/vesper-ui-2.0.0.tgz` and integrity in the lockfile. A clean clone can install without a parent folder or private registry. Regenerate a new numbered release when shared source changes; do not modify installed node_modules.
+The three applications are independent Git repositories and Vercel projects. Install the checked-in release tarball locally, then keep it in each repository's `vendor/` directory. npm records `file:vendor/vesper-ui-3.0.0.tgz` and integrity in the lockfile. A clean clone can install without a parent folder or private registry. Regenerate a new numbered release when shared source changes; do not modify installed node_modules.
 
 The package ships Vue SFC/TypeScript sources for the projects' existing Vite Vue plugin to compile. It is not a precompiled UMD/browser bundle. All three projects already have Vue 3.5 and Vite Vue support. The token/CSS layer has no framework runtime dependency. No backend, network fonts, analytics or remote asset request is introduced.
 
