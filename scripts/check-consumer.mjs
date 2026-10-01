@@ -1,0 +1,34 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import os from 'node:os';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+import { execFileSync } from 'node:child_process';
+import assert from 'node:assert/strict';
+const root=fileURLToPath(new URL('../',import.meta.url));
+const installed=path.resolve(process.argv[2] || path.join(root,'../p301-dashboard/node_modules'));
+const temp=fs.mkdtempSync(path.join(os.tmpdir(),'vesper-consumer-'));
+fs.cpSync(path.join(root,'tests/consumer'),temp,{recursive:true});
+fs.writeFileSync(path.join(temp,'package.json'),'{"type":"module","private":true}');
+const deps=path.join(temp,'node_modules');fs.mkdirSync(deps);
+for(const entry of fs.readdirSync(installed)){
+ if(entry==='.bin'||entry==='.package-lock.json')continue;
+ fs.symlinkSync(path.join(installed,entry),path.join(deps,entry),'dir');
+}
+fs.mkdirSync(path.join(deps,'@vesper/ui'),{recursive:true});
+execFileSync('tar',['-xzf',path.join(root,'releases/vesper-ui-3.0.0.tgz'),'-C',path.join(deps,'@vesper/ui'),'--strip-components=1']);
+const run=(bin,args)=>execFileSync(process.execPath,[path.join(installed,bin),...args],{cwd:temp,stdio:'inherit'});
+run('vue-tsc/bin/vue-tsc.js',['--noEmit']);
+run('vite/bin/vite.js',['build']);
+run('vite/bin/vite.js',['build','--ssr','entry-server.ts','--outDir','server-dist']);
+const {render}=await import(pathToFileURL(path.join(temp,'server-dist/entry-server.js')));
+const html=await render();
+assert.match(html,/disabled aria-busy="true"/);
+assert.match(html,/role="status"/);
+assert.match(html,/for="reason"/);
+assert.match(html,/aria-describedby="reason-hint reason-error"/);
+assert.match(html,/aria-invalid="true"/);
+assert.match(html,/Unavailable/);
+assert.match(html,/VESPER/);
+assert.match(html,/#b9dee1/);
+console.log('Packed consumer: typecheck, production build, SSR build and semantic render checks passed.');
+console.log('Fixture retained at '+temp);

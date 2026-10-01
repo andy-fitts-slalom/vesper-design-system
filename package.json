@@ -1,0 +1,49 @@
+{
+  "name": "@vesper/ui",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Shared Vesper identity, UI foundations and Vue primitives for Watchlight, Frame and Verbatim",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist",
+    "src/vue",
+    "src/adapters",
+    "src/styles",
+    "assets",
+    "licenses",
+    "LICENSE",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/tokens.d.ts",
+      "default": "./dist/tokens.js"
+    },
+    "./tokens.css": "./dist/tokens.css",
+    "./styles.css": "./src/styles/index.css",
+    "./fonts.css": "./src/styles/fonts.css",
+    "./vue": "./src/vue/index.ts",
+    "./vuetify": "./src/adapters/vuetify.ts",
+    "./charts": "./src/adapters/charts.ts",
+    "./ionic.css": "./dist/ionic.css",
+    "./brand/*": "./assets/brand/*"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run build && npm test",
+    "prepack": "npm run check",
+    "pack:release": "npm pack --pack-destination releases",
+    "preview": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=22.12"
+  }
+}
