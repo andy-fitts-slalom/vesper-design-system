@@ -1,5 +1,9 @@
 # Vesper UI verification
 
+## README visual — 2026-10-01
+
+The README preview image was captured from the local 3.0 reference at 1440 × 1250 after fonts loaded. The hero and all three product expressions were visually inspected; the browser reported no page errors. `npm run check` passed all five checks. No package source or released tarball changed.
+
 ## 3.0.0 — 2026-10-01
 
 - `npm run check`: five token, contrast, export and Ionic checks passed.

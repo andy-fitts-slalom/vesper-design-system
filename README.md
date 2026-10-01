@@ -2,6 +2,10 @@
 
 A shared brand and UI system for **Vesper**, the fictional parent of Watchlight, Frame, and Verbatim. Version 3 adopts a cool salt-flat canvas, petrol accents, and condensed sans display type. Each application installs its own portable copy of the package.
 
+![Vesper UI 3.0 reference with the three product expressions](docs/images/vesper-3.0.0/readme-preview.png)
+
+Screenshot of the local Vesper UI 3.0 reference preview.
+
 Start with the [visual reference](preview/index.html), [brand identity](docs/BRAND.md), [project inventory](docs/INVENTORY.md), [review readiness](docs/REVIEW-READINESS.md), and [component contracts](docs/COMPONENTS.md). The source of truth for values is `src/tokens.json`; build outputs must not be edited by hand.
 
 ## Included
