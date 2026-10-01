@@ -7,6 +7,7 @@
 - `node scripts/check-consumer.mjs ../p301-dashboard/node_modules`: Vue type check, client build, SSR build and semantic render passed from the packed release.
 - Chrome preview at `http://127.0.0.1:4386/preview/index.html`: inspected the salt-flat canvas, Barlow Condensed hierarchy, three product specimens and paper palette.
 - The three independent consumers installed the checked-in tarball and built successfully; application test details are recorded in their own verification documents.
+- Commit `302422f` was pushed to the shared design-system repository on `main`; each application vendors the same SHA-256 release tarball. The Frame and Verbatim production pages were opened after their application deployments completed.
 - The background WebP is 35.9 kB at 2048 × 1152, with its generated source PNG retained under `design/`. Existing historical verification remains below.
 
 ## Historical 2.0 record
