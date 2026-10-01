@@ -6,7 +6,7 @@ Version 2.0.0 changes the package name, export names, CSS namespace and identity
 
 Run `npm run check`, review all themes and phone rendering, check Vue/adapters in the consumer fixture, and run `npm run pack:release`. For a changed release, bump package.json and src/tokens.json together first. Keep the released tarball immutable. Copy the new tarball to each consumer and update its lockfile intentionally. Compare release checksums when diagnosing drift.
 
-A future dedicated shared Git repository can track this folder. No remote destination was requested or created. Until then, preserve this entire sibling folder and deliver versioned tarballs to independent applications. Do not claim the shared source is backed up by the three existing repositories.
+The canonical shared source is the public [andy-fitts-slalom/vesper-design-system repository](https://github.com/andy-fitts-slalom/vesper-design-system). Keep its history and tagged releases as the source of truth. The three application repositories remain independent and consume versioned tarballs; do not replace those dependencies with sibling paths or application cross-imports.
 
 Product-specific additions stay local until two products demonstrably need the same presentation contract. Never move eligibility, campaign metrics, fixed-clock rules or persistence into the design package to reduce superficial duplication. Cross-project shared branding and presentation are explicitly requested; case-study business data/code remain independent.
 

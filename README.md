@@ -65,4 +65,4 @@ Open a separate chat in each existing project, then paste that project's complet
 - [Frame](prompts/p302-data-story.md)
 - [Verbatim](prompts/p303-mobile.md)
 
-The parent directory is not a Git repository; the shared source is a local sibling folder. Each application upgrade is independently installable using the release tarball. Existing GitHub repositories have been renamed to match the products. See `docs/GOVERNANCE.md` for future source ownership and releases.
+The shared source is maintained in the public [vesper-design-system GitHub repository](https://github.com/andy-fitts-slalom/vesper-design-system). Each application upgrade remains independently installable using the release tarball. Existing application repositories have been renamed to match the products. See `docs/GOVERNANCE.md` for source ownership and release guidance.
